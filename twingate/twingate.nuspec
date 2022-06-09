@@ -40,7 +40,15 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <summary>Replace corporate VPNs with a more secure, usable and performant zero trust access solution</summary>
     <description><![CDATA[Delivered as a cloud-based service, Twingate empowers IT teams to easily configure a software defined perimeter without changing infrastructure, and centrally manage user access to internal apps, whether they are on-prem or in the cloud.
 ]]></description>
-    <releaseNotes>https://www.twingate.com/changelog/clients/</releaseNotes>
+    <releaseNotes><![CDATA[
+    * Added support for [device posture](https://docs.twingate.com/docs/device-security-guide).
+    * Resolved an issue that would erroneously report that another VPN connection active, preventing the client from connecting under certain circumstances.
+    * Updated data transport behavior to disconnect automatically after user inactivity on specific connections.
+    * Resolved an issue that could cause a crash on client disconnection from Twingate.
+    * Resolved an issue that prevented the client from reconnecting after OS suspend/resume.
+    * Updated logging verbosity.
+    * Resolved an issue where it could take longer than configured to fallback from peer-to-peer connectivity to relayed data transport.
+    ]]></releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
