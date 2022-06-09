@@ -1,13 +1,8 @@
 ﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file. If you are the software author, you can change this
-mention you are the author of the software.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
 VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
- 
-<Include details of how to verify checksum contents>
-<If software vendor, explain that here - checksum verification instructions are optional>
+
+Changelog available here: https://www.twingate.com/changelog/clients/
+Package maintained by Twingate Inc. - contact emrul@twingate.com for assistance
+Checksum verification is optional

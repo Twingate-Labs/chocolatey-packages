@@ -1,11 +1,122 @@
 ﻿
-Note: Include this file if including binaries you have the right to distribute. 
-Otherwise delete. this file.
-
-===DELETE ABOVE THIS LINE AND THIS LINE===
-
-From: <insert applicable license url here>
+From: https://www.twingate.com/terms/user/
 
 LICENSE
 
-<Insert License Here>
+User Terms of Service
+
+Version date: May 26, 2020
+
+Thanks for using Twingate! These user terms of service (“Terms”) and the [Customer Agreement](https://www.twingate.com/terms/) cover your access and use of our Services. Capitalized terms used below but not defined will have the meaning assigned to them in the Customer Agreement.
+
+By using our Services, you’re agreeing to be bound by these Terms.
+
+1. YOU, CUSTOMER AND TWINGATE
+An organization or other third party that we refer to in these User Terms of Service as “Customer” has invited you to create or use a Twingate account, or download Twingate Software. The Customer has separately agreed to our Customer Terms or entered into a written agreement with us (in either case, the “Customer Agreement”) that permitted the Customer to create a Twingate account so that you and others could join. When you (as a User) set up an account for the Services or download and use Twingate Software, you acknowledge and agree that the Customer has certain choices and controls over your use of the Services. For example, Customer may provision or deprovision access to the Services, enable or disable third party integrations, and manage permissions or other settings, and these choices and instructions may result in changes to your access to the Services or use, disclosure, modification or deletion of Customer Data.
+
+2. USE OF SERVICES
+2.1 Services. By using the Services, you agree that:
+
+(a) you are over the age of 16 and are the intended recipient of Customer’s invitation to the Services;
+
+(b) you will safeguard your password to the Services, and keep your account information current; and
+
+(c) you are not: (i) located in any country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country; or (ii) listed on any U.S. Government list of prohibited or restricted parties.
+
+2.2 Restrictions. Unless otherwise expressly permitted in writing by Twingate, you will not (and will not allow a third party to):
+
+(a) lease, sell, resell or use for timesharing or service bureau purposes the Services;
+
+(b) interfere with, disrupt, alter, or modify any Services, or create an undue burden on the Services or the networks or services connected to the Services;
+
+(c) engage in abusive or excessive usage of the Services, which usage is significantly in excess of average usage patterns that adversely affects the speed, responsiveness, stability, availability or functionality of the Services;
+
+(d) use any framing techniques to enclose any Twingate Mark or Twingate Materials (defined below) or use any meta tags or other “hidden text” using the Twingate Marks;
+
+(e) introduce unauthorized software or automated agents or scripts into the Services so as to create multiple accounts, generate automated searches, requests or queries, or to strip or mine data from the Services;
+
+(f) use any method (whether manual or automated) to extract or scrape data from the Services;
+
+(g) reverse engineer, decompile, disassemble or otherwise attempt to derive the source code, techniques, processes, algorithms, know-how or other information from the binary code portions of the Software by any means whatsoever, unless this restriction is prohibited by law;
+
+(h) perform or publish any benchmark tests or analyses relating to the Services;
+
+(i) purchase, access, or use the Services for the purpose of building or improving a competitive product or service, or for any other competitive purpose;
+
+(j) circumvent or attempt to circumvent any limitations that Twingate imposes on your account in accordance with these Terms (such as account suspensions for non-payment);
+
+(k) probe, scan, or test for vulnerabilities in the Services or any other Twingate system or network;
+
+(l) use the Services for any unlawful purposes or activities;
+
+(m) use the Services to transmit any code, agents, software, or links to such materials with the intent to do harm (such as viruses, worms, Trojan horses, and malware);
+
+(n) share your User Account or access credentials to other User Accounts;
+
+(o) use the Services in a way that would subject Twingate to any industry-specific regulations. For example, you may not use the Services to collect, protect, or otherwise handle “protected health information” (as defined in 45 C.F.R. §160.103 under United States federal regulations) without entering into a separate business associate agreement with Twingate that permits you to do so;
+
+(p) you will not attempt to access, search, or create accounts for any of our Services by any means other than our publicly supported interfaces or as otherwise authorized by us;
+
+(q) you will not use the Services to process, store or transmit material, including any Customer Data, in violation of any law or any third party rights, including without limitation intellectual property and privacy rights; or
+
+(r) you will not use the Services in any circumstances where failure could lead to death, personal injury or environmental damage, and you further acknowledge that the Services are not designed or intended for such use.
+
+3. SOFTWARE LICENSE
+Twingate hereby grants to you a revocable, non-exclusive, non-transferable (except pursuant to Section 11.1 (Assignment)) and non-sublicensable license to install, copy and use the Software solely as necessary to use the Services and in accordance with the Agreement and all other Twingate documentation. Your license to the Software will end upon the termination of your right to use the applicable Services. Some Software may contain open source or third party software, which may have additional or different terms regarding such Software’s use.
+
+4. BETA SERVICES
+We sometimes release products and features that are Beta Services. Beta Services are made available so that we can collect user feedback, and if you use our Beta Services, you agree that we may contact you to collect such feedback. Beta Services are confidential until official launch. If you use any Beta Services, you agree not to disclose any information about those Services to anyone else without our permission.
+
+5. TWINGATE INTELLECTUAL PROPERTY
+The Services are protected by copyright, trademark, and other U.S. and foreign laws. Except as set forth herein, these Terms do not grant you any right, title, or interest in the Services, Twingate trademarks, logos and other brand features. We welcome feedback, but note that we may use comments or suggestions without any obligation to you.
+
+6. CUSTOMER POLICIES AND YOUR DATA
+As between us and Customer, you agree that it is solely Customer’s responsibility to (a) inform Users of any relevant Customer policies and practices and any settings that may impact you or the processing of Customer Data; (b) obtain any rights, permissions or consents from Users that are necessary for the lawful use of Customer Data and the operation of the Services; (c) ensure that the transfer and processing of Customer Data under the contract is lawful; and (d) respond to and resolve any dispute with Users relating to or based on the Services, Customer Data or Customer’s failure to fulfill these obligations. Twingate makes no representations or warranties of any kind, whether express or implied, to you relating to the Services, which are provided to you on an “as is” and “as available” basis.
+
+7. APPLICATION OF CONSUMER LAW
+Twingate is a tool intended for use by businesses and organizations, and not for consumer purposes. To the maximum extent permitted by law, you hereby acknowledge and agree that consumer laws do not apply. If however any consumer laws do apply and cannot otherwise be lawfully excluded, nothing in these Terms will restrict, exclude or modify any statutory warranties, guarantees, rights or remedies you have, and our liability is limited (at our option) to the replace or modify the Services or the pro-rata refund to Customer of pre-paid fees for your subscription covering the remainder of the term.
+
+8. TERMINATION
+If we believe that there is a violation of the Agreement, these Terms or any of our other policies that can be remedied by Customer, we will, in most cases, ask Customer to take action rather than intervene. However, we reserve the right to suspend or terminate your access to the Services with notice to you if you are in breach of these Terms.
+
+These Terms remain effective until Customer’s subscription for you terminates, or your access to the Services has been terminated by Customer or us. Please contact Customer if you wish to terminate your account.
+
+9. UPDATES TO THESE TERMS
+Twingate may make changes to these Terms at any time for a variety of reasons, such as to reflect changes in applicable law or to account for new Services or functionality. The most current version of these Terms will be posted on the Twingate website. Changes will be effective no sooner than the day they are publicly posted. If you do not want to agree to any changes made to these Terms, you should stop using the Services, because by continuing to use the Services after the date the changes become effective, you indicate your agreement to be bound by the updated Terms.
+
+10. APPLE APP STORE ADDITIONAL LICENSE TERMS
+10.1 If the Software is provided to you through Apple Inc. (Apple Inc. together with all of its affiliates, “Apple”) App Store, the following terms and conditions apply to you in addition to all the other terms set forth herein:
+
+(a) Apple is not responsible for the Services and has no obligation to furnish any maintenance or support services with respect to the Software or the Services.
+
+(b) In the event of any failure of the Software to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price for the Software (if any) to the Customer. Except for the foregoing, to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the Software, and any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any warranty will be governed by the Customer Agreement.
+
+(c) Any claim in connection with the Software related to product liability, a failure to conform to applicable legal or regulatory requirements, or claims under consumer protection or similar legislation is governed by the Customer Agreement, and Apple is not responsible for such claim.
+
+(d) Any third party claim that the Software or your possession and use of the Software infringes that third party’s Intellectual Property Rights will be governed by the Customer Agreement, and Apple will not be responsible for the investigation, defense, settlement and discharge of such intellectual property infringement claim.
+
+(e) Apple shall be a third-party beneficiary of these Terms and upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you.
+
+11. MISCELLANEOUS
+11.1 Assignment. Neither you nor Twingate may assign these Terms without the other party’s prior written consent (such consent not to be unreasonably withheld). However, Twingate may assign these Terms without notice or consent to an Affiliate or to a successor or acquirer, as the case may be, in connection with a merger, acquisition, corporate reorganization or consolidation, or the sale of all or substantially all of Twingate’s assets or of the Twingate business line to which the subject matter of these Terms relates. Any other attempt to transfer or assign is void.
+
+11.2 Contracting Party: In these Terms, “Twingate,” “we,” “our”, and “us” each refer to Twingate Inc., a Delaware corporation and “You” and “your” each refer to the User using the Services or the Software.
+
+11.3 Force Majeure. Neither Twingate nor you will be liable for inadequate performance to the extent caused by events beyond the reasonable control of a party, which may include denial-of-service attacks, internet disturbance, strikes, riots, pandemics or epidemics, natural disasters, acts of God, war, terrorism, and governmental action.
+
+11.4 Governing Law; Jurisdiction: These Terms are governed by the laws of the state of California, without giving effect to any of its conflicts of laws principles. Any action at law or in equity arising out of or relating in any way to these Terms will be governed by the dispute resolution procedure set forth in Section 14 of the Customer Agreement.
+
+11.5 Interpretation. These Terms were prepared and written in English. Any non-English translations of these Terms which may be made available is provided for convenience only and is not valid or legally binding. Use of section headings in these Terms are for convenience only and will not have any impact on the interpretation of particular provisions. The use of the words “includes,” “including,” “such as,” “for example,” and similar terms are deemed not to limit what else might be included.
+
+11.6 Precedence. These Terms do not apply to the parties if the parties have entered into a separate agreement that expressly excludes the applicability of these online terms.
+
+11.7 Severability. If any provision of these Terms is held to be unlawful, void, or for any reason unenforceable, then that provision will be limited or eliminated from these Terms to the minimum extent necessary and will not affect the validity and enforceability of any remaining provisions.
+
+11.8 Waiver. A party’s failure or delay to enforce a provision under these Terms is not a waiver of its right to do later. Any waiver by Twingate of any provision of these Terms will be effective only if in writing and signed by Twingate. Any cause of action arising out of or related to the Services by you against Twingate must commence within 1 year after the cause of action accrues.
+
+12. CONTACT US
+You may contact us at any time with questions or comments using the following details:
+
+Twingate Inc., 541 Jefferson Ave, Suite 100, Redwood City, CA 94061, USA
+
+Email: support@twingate.com

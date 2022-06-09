@@ -3,15 +3,15 @@ $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = ''
 $url64      = "https://binaries.twingate.com/client/windows/versions/1.0.18.11084/TwingateWindowsInstaller.msi"
-$checksum64 = '9e83fe5e8095784e83e7cfccc1b663e6ea299e443599dd51a3c621fed0a70059'
+$checksum64 = '9E83FE5E8095784E83E7CFCCC1B663E6EA299E443599DD51A3C621FED0A70059'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  fileType      = 'MSI'
-  url           = $url
-  url64bit      = $url64
+  fileType      = 'msi'
 
+  file           = ''
+  file64         = gi $toolsDir\*x64.msi
   softwareName  = 'twingate*'
 
   checksum      = ''
