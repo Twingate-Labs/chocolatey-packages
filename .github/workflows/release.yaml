@@ -18,12 +18,12 @@ jobs:
         id: update_template
         working-directory: twingate
         run: .\update.ps1
-      - name: Check if there are changes
-        id: changes
-        uses: UnicornGlobal/has-changes-action@v1.0.11
-      - name: Process changes
-        if: steps.changes.outputs.changed == 1
-        run: echo "Changes exist"
+      - name: Get changed files in the docs folder
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v29.0.7
+        with:
+          files: |
+            twingate/**
 
 #      - name: Cat Content
 #        id: cat_content
