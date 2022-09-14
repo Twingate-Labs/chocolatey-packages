@@ -20,10 +20,12 @@ jobs:
 #        id: update_template
 #        working-directory: twingate
 #        run: .\update.ps1
-#      - name: test
-#        run: echo 'test123123' >> twingate/twingate.nuspec
-#      - name: test2
-#        run: touch 123.txt
+      - name: test
+        run: echo 'test123123' >> twingate/twingate.nuspec
+      - name: test2
+        run: touch 123.txt
+      - name: test3
+        run: cat twingate/twingate.nuspec
 
       - name: Get specific changed files
         id: changed-files-specific
