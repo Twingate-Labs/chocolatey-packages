@@ -16,7 +16,8 @@ jobs:
           ls
       - run: |
           dir
+#      - run: |
+#          cd twingate
       - run: |
-          cd twingate
-      - run: |
+          working-directory: twingate
           dir
