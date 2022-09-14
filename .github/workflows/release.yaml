@@ -17,8 +17,14 @@ jobs:
       - name: Update Template
         working-directory: twingate
         run: .\update.ps1
-      - name: cat Content
+      - name: Cat Content
+        id: cat_content
         working-directory: twingate
+        run: cat twingate.nuspec
+      - name: Check Contains
+        id: check_contains
+        working-directory: twingate
+        if: !contains(steps.cat_content, '1.0.18.11084')
         run: cat twingate.nuspec
       - run: |
           ls
