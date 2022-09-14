@@ -28,6 +28,7 @@ jobs:
         working-directory: twingate
         run: cat twingate.nuspec
       - name: Choco Package
+        if: ${{ !contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
         uses: crazy-max/ghaction-chocolatey@v2
         with:
           args: pack twingate/twingate.nuspec
