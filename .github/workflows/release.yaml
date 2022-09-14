@@ -1,0 +1,15 @@
+name: release
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build_release:
+    runs-on: windows-latest
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v1
+      - run: |
+          ls -l
+          dir
