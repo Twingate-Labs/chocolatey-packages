@@ -23,7 +23,7 @@ jobs:
         run: cat twingate.nuspec
       - name: Check Contains
         id: check_contains
-        if: !contains(steps.cat_content, '1.0.18.11084')
+        if: contains(steps.cat_content, '1.0.18.11084')
         working-directory: twingate
         run: cat twingate.nuspec
 #      - run: |
