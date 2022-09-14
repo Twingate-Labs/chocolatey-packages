@@ -18,20 +18,27 @@ jobs:
         id: update_template
         working-directory: twingate
         run: .\update.ps1
-      - name: Cat Content
-        id: cat_content
-        working-directory: twingate
-        run:  echo "::set-output name=out::$(cat twingate.nuspec)"
-      - name: Check Contains
-        id: check_contains
-        if: ${{ !contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
-        working-directory: twingate
-        run: cat twingate.nuspec
-      - name: Choco Package
-        if: ${{ !contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
-        uses: crazy-max/ghaction-chocolatey@v2
-        with:
-          args: pack twingate/twingate.nuspec
+      - name: Check if there are changes
+        id: changes
+        uses: UnicornGlobal/has-changes-action@v1.0.11
+      - name: Process changes
+        if: steps.changes.outputs.changed == 1
+        run: echo "Changes exist"
+
+#      - name: Cat Content
+#        id: cat_content
+#        working-directory: twingate
+#        run:  echo "::set-output name=out::$(cat twingate.nuspec)"
+#      - name: Check Contains
+#        id: check_contains
+#        if: ${{ !contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
+#        working-directory: twingate
+#        run: cat twingate.nuspec
+#      - name: Choco Package
+#        if: ${{ !contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
+#        uses: crazy-max/ghaction-chocolatey@v2
+#        with:
+#          args: pack twingate/twingate.nuspec
       - run: |
           dir
 #      - name: workingdirectory
