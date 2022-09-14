@@ -13,7 +13,13 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v1
       - name: Install AU
-        run: Install-Module au
+        run: Install-Module au -Force
+      - name: Update Template
+        working-directory: twingate
+        run: .\update.ps1
+      - name: cat Content
+        working-directory: twingate
+        run: cat twingate.nuspec
       - run: |
           ls
       - run: |
