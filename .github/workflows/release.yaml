@@ -21,8 +21,10 @@ jobs:
         id: cat_content
         working-directory: twingate
         run: cat twingate.nuspec
+#      - name: test
+#        run: echo '${{ join(steps.cat_content.outputs.*) }}'
       - name: test
-        run: echo '${{ join(steps.cat_content.outputs.*) }}'
+        run: echo '${{ steps.cat_content }}'
       - name: Check Contains
         id: check_contains
         if: ${{ contains(steps.cat_content.outputs.stdout, '1.0.18.11084') }}
