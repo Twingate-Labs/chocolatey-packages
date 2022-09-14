@@ -12,24 +12,27 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v1
-      - name: Install AU
-        run: Install-Module au -Force
-      - name: Update Template
-        id: update_template
-        working-directory: twingate
-        run: .\update.ps1
-      - name: test
-        run: echo 'test123123' >> twingate/twingate.nuspec
-      - name: test2
-        run: touch 123.txt
+        with:
+          fetch-depth: 0
+#      - name: Install AU
+#        run: Install-Module au -Force
+#      - name: Update Template
+#        id: update_template
+#        working-directory: twingate
+#        run: .\update.ps1
+#      - name: test
+#        run: echo 'test123123' >> twingate/twingate.nuspec
+#      - name: test2
+#        run: touch 123.txt
 
-      - name: Get changed files in the docs folder
+      - name: Get specific changed files
         id: changed-files-specific
         uses: tj-actions/changed-files@v29.0.7
         with:
           files: |
-            twingate/**
+            twingate.nuspec
             **
+            **/twingate.nuspec
 
       - name: Run step if any file(s) in the docs folder change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
