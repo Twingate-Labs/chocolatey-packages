@@ -17,15 +17,15 @@ jobs:
       - name: Update Template
         id: update_template
         working-directory: twingate
-        run: ::set-output name=out::.\update.ps1
-#      - name: Cat Content
-#        id: cat_content
-#        working-directory: twingate
-#        run: cat twingate.nuspec
+        run: .\update.ps1
+      - name: Cat Content
+        id: cat_content
+        working-directory: twingate
+        run:  echo "::set-output name=out::$(cat twingate.nuspec)"
 #      - name: test
 #        run: echo '${{ join(steps.cat_content.outputs.*) }}
       - name: test
-        run: echo ${{ steps.update_template.outputs.out }}
+        run: echo ${{ steps.cat_content.outputs.* }}
       - name: Check Contains
         id: check_contains
         if: ${{ contains(steps.cat_content.outputs.stdout, '1.0.18.11084') }}
