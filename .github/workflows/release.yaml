@@ -30,7 +30,7 @@ jobs:
       - name: Choco Package
         uses: crazy-max/ghaction-chocolatey@v2
         with:
-          args: pack twingate
+          args: pack twingate/twingate.nuspec
 #      - run: |
 #          ls
       - run: |
