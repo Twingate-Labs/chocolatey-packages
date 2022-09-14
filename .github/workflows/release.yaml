@@ -31,15 +31,7 @@ jobs:
         uses: crazy-max/ghaction-chocolatey@v2
         with:
           args: pack twingate/twingate.nuspec
-#      - run: |
-#          ls
       - run: |
           dir
-#      - run: |
-#          cd twingate
-      - name: workingdirectory
-        working-directory: twingate
-        run: |
-          dir
-#      - run: |
-#          dir
+#      - name: workingdirectory
+#        working-directory: twingate
