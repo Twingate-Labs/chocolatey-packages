@@ -27,20 +27,25 @@ jobs:
       - name: test3
         run: cat twingate/twingate.nuspec
 
-      - name: Get specific changed files
-        id: changed-files-specific
+#      - name: Get specific changed files
+#        id: changed-files-specific
+#        uses: tj-actions/changed-files@v29.0.7
+#        with:
+#          files: |
+#            twingate.nuspec
+#            **
+#            **/twingate.nuspec
+
+      - name: Get changed files
+        id: changed-files
         uses: tj-actions/changed-files@v29.0.7
-        with:
-          files: |
-            twingate.nuspec
-            **
-            **/twingate.nuspec
+
 
       - name: Run step if any file(s) in the docs folder change
-        if: steps.changed-files-specific.outputs.any_changed == 'true'
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
           echo "One or more files in the docs folder has changed."
-          echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
+          echo "List all the files that have changed: ${{ steps.changed-files.outputs.all_changed_files }}"
 
 
 #      - name: Cat Content
