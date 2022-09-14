@@ -13,5 +13,5 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v1
       - run: |
-          ls -l
+          ls
           dir
