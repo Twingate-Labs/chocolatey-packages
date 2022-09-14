@@ -45,8 +45,8 @@ jobs:
         run: |
           git config --global user.name "Github WorkFlow"
           git config --global user.email ${{ secrets.EMAIL }}
-          git commit -a -m "Github Workflow Update"
-          git push
+          git commit -m "Github Workflow Update"
+          git push origin HEAD:master
 
 #      - name: Get specific changed files
 #        id: changed-files-specific
