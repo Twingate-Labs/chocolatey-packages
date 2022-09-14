@@ -18,8 +18,9 @@ jobs:
           dir
 #      - run: |
 #          cd twingate
-      - run: |
-          dir
+      - name: workingdirectory
         working-directory: twingate
+        run: |
+          dir
       - run: |
           dir
