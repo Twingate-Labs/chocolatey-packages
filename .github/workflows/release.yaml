@@ -23,12 +23,10 @@ jobs:
         working-directory: twingate
         run:  echo "::set-output name=out::$(cat twingate.nuspec)"
 #      - name: test
-#        run: echo '${{ join(steps.cat_content.outputs.*) }}
-      - name: test
-        run: Get-Content ${{ steps.cat_content.outputs.out }}
+#        run: ${{ steps.cat_content.outputs.out }}
       - name: Check Contains
         id: check_contains
-        if: ${{ contains(steps.cat_content.outputs.stdout, '1.0.18.11084') }}
+        if: ${{ contains(steps.cat_content.outputs.out, '1.0.18.11084') }}
         working-directory: twingate
         run: cat twingate.nuspec
 #      - run: |
