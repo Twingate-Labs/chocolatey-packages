@@ -20,28 +20,22 @@ jobs:
         run: .\update.ps1
       - name: test
         run: echo 'test123123' >> twingate/twingate.nuspec
-#      - name: Get changed files in the docs folder
-#        id: changed-files-specific
-#        uses: tj-actions/changed-files@v29.0.7
-#        with:
-#          files: |
-#            twingate/**
+      - name: test2
+        run: touch 123.txt
 
-#      - name: Run step if any file(s) in the docs folder change
-#        if: steps.changed-files-specific.outputs.any_changed == 'true'
-#        run: |
-#          echo "One or more files in the docs folder has changed."
-#          echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
-
-      - name: Get changed files
-        id: changed-files
+      - name: Get changed files in the docs folder
+        id: changed-files-specific
         uses: tj-actions/changed-files@v29.0.7
+        with:
+          files: |
+            twingate/**
+            **
 
-      - name: List all changed files
+      - name: Run step if any file(s) in the docs folder change
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
-          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            echo "$file was changed"
-          done
+          echo "One or more files in the docs folder has changed."
+          echo "List all the files that have changed: ${{ steps.changed-files-specific.outputs.all_changed_files }}"
 
 
 #      - name: Cat Content
