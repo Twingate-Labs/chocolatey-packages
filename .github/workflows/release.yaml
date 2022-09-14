@@ -25,7 +25,7 @@ jobs:
           files: |
             twingate/**
       - name: test
-        run: touch twingate/test1.txt
+        run: echo 'test123123' >> twingate/twingate.nuspec
       - name: Run step if any file(s) in the docs folder change
         if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
@@ -48,5 +48,7 @@ jobs:
 #          args: pack twingate/twingate.nuspec
       - run: |
           dir
-#      - name: workingdirectory
-#        working-directory: twingate
+      - name: workingdirectory
+        working-directory: twingate
+        run: |
+          dir
