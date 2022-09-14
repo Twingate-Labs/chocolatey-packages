@@ -43,7 +43,7 @@ jobs:
       - name: GIT Commit Build Artifacts (coverage, dist, devdist, docs)
         if: steps.verify-changed-files.outputs.files_changed == 'true'
         run: |
-          git config --global user.name "Github WorkFlow"
+          git config --global user.name ${{ secrets.USERNAME }}
           git config --global user.email ${{ secrets.EMAIL }}
           git add twingate/twingate.nuspec
           git commit -m "Github Workflow Update"
