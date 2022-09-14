@@ -15,6 +15,7 @@ jobs:
       - name: Install AU
         run: Install-Module au -Force
       - name: Update Template
+        id: update_template
         working-directory: twingate
         run: .\update.ps1
       - name: Cat Content
@@ -22,9 +23,9 @@ jobs:
         working-directory: twingate
         run: cat twingate.nuspec
 #      - name: test
-#        run: echo '${{ join(steps.cat_content.outputs.*) }}'
+#        run: echo '${{ join(steps.cat_content.outputs.*) }}
       - name: test
-        run: echo '${{ steps.cat_content.outputs }}'
+        run: echo ${{ steps.update_template.outputs }}
       - name: Check Contains
         id: check_contains
         if: ${{ contains(steps.cat_content.outputs.stdout, '1.0.18.11084') }}
