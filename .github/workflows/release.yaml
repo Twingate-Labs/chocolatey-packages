@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Setup repo
         uses: actions/checkout@v1
+      - name: Install AU
+        run: Install-Module au
       - run: |
           ls
       - run: |
