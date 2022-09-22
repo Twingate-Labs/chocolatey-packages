@@ -50,8 +50,8 @@ jobs:
         with:
           args: pack twingate/twingate.nuspec
 
-#      - run: |
-#          dir
+      - run: |
+          dir
 #      - name: workingdirectory
 #        working-directory: twingate
 #        run: |
