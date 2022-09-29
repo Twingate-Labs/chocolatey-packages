@@ -13,7 +13,7 @@ function global:au_GetLatest {
     }
     return @{ Version = $package.NuspecVersion }
 }
-<#
+
 function global:au_SearchReplace {
     @{
         "tools\chocolateyInstall.ps1" = @{
@@ -22,7 +22,7 @@ function global:au_SearchReplace {
         }
     }
 }
-#>
+
 function global:au_BeforeUpdate() {
     Get-RemoteFiles -Purge
 }
