@@ -15,12 +15,7 @@ function global:au_GetLatest {
 }
 
 function global:au_SearchReplace {
-    @{
-        "tools\chocolateyInstall.ps1" = @{
-            '(^[$]url64\s*=\s*)(".*")'      = "`${1}`"$($Latest.URL64)`""
-            "(^[$]checksum64\s*=\s*)('.*')" = "`${1}'$($Latest.Checksum64)'"
-        }
-    }
+    @{}
 }
 
 function global:au_BeforeUpdate() {
