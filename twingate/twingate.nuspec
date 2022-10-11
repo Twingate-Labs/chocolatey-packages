@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 Please see https://www.twingate.com/changelog/clients/
 ]]></releaseNotes>
   <dependencies>
-    <dependency id="dependency-windows10" version="10.2105" />
+    <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
   </dependencies>
   </metadata>
   <files>
