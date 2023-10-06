@@ -45,6 +45,7 @@ Please see https://www.twingate.com/changelog/clients/
 ]]></releaseNotes>
   <dependencies>
     <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
+    <dependency id="dotnet-6.0-desktopruntime" version="6.0.22" />
   </dependencies>
   </metadata>
   <files>
