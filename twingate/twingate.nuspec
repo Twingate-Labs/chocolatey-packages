@@ -19,7 +19,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>twingate</id>
-    <version>2023.250.8341</version>
+    <version>2023.292.9388</version>
     <packageSourceUrl>https://github.com/Twingate-Labs/chocolatey-packages</packageSourceUrl>
     <owners>Twingate Labs</owners>
     <title>Twingate (Client)</title>
