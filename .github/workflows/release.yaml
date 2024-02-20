@@ -27,8 +27,7 @@ jobs:
         uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
         with:
-          files: |
-            twingate.nuspec
+          files: twingate.nuspec
 
       - name: GIT Commit
         if: steps.verify-changed-files.outputs.files_changed == 'true'
