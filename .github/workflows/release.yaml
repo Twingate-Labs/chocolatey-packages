@@ -65,9 +65,10 @@ jobs:
 #        with:
 #          args: push --source https://push.chocolatey.org/ -k ${{ secrets.CHOCO_API_KEY }}
 
-#      - run: |
-#          dir
-#      - name: workingdirectory
-#        working-directory: twingate
-#        run: |
-#          dir
+      - run: |
+          dir
+      - name: workingdirectory
+        working-directory: twingate
+        run: |
+          dir
+          print twingate/twingate.nuspec
