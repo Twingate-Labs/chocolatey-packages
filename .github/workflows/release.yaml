@@ -71,4 +71,4 @@ jobs:
         working-directory: twingate
         run: |
           dir
-          print twingate/twingate.nuspec
+          print twingate.nuspec
