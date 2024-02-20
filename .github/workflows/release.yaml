@@ -27,7 +27,7 @@ jobs:
         uses: tj-actions/verify-changed-files@v18
         id: verify-changed-files
         with:
-          path: twingate
+          path: .\twingate
           files: |
             twingate.nuspec
 
