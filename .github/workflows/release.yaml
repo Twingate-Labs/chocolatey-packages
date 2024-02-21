@@ -11,10 +11,10 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Setup repo
-        uses: actions/checkout@v4
-        with:
-#          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
-          fetch-depth: 0
+        uses: actions/checkout@v2
+#        with:
+##          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+#          fetch-depth: 0
 
       - name: Install AU
         run: Install-Module au -Force
