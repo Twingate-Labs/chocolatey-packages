@@ -13,7 +13,7 @@ jobs:
       - name: Setup repo
         uses: actions/checkout@v4
         with:
-          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+#          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
           fetch-depth: 0
 
       - name: Install AU
@@ -32,12 +32,15 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v42
+      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
 
       - name: List all changed files
         env:
           ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
         run: |
-          echo $ALL_CHANGED_FILES
+          for file in ${ALL_CHANGED_FILES}; do
+            echo "$file was changed"
+          done
 
 #      - name: GIT Commit
 #        if: steps.changed-files.outputs.any_changed == 'true'
