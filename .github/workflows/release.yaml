@@ -34,7 +34,7 @@ jobs:
         uses: tj-actions/changed-files@v42
         with:
           files: |
-            twingate.nuspec
+            *.nuspec
 
       - name: List all changed files
         env:
