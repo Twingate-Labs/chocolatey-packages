@@ -29,16 +29,19 @@ jobs:
 #        with:
 #          files: twingate.nuspec
 
-      - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v42
-      # NOTE: `since_last_remote_commit: true` is implied by default and falls back to the previous local commit.
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v18
+        id: verify-changed-files
+        with:
+          files: |
+            *.nuspec
 
-      - name: List all changed files
+      - name: Run step only when any of the above files change.
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         env:
-          ALL_CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+          CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
         run: |
-          echo '${{ toJSON(steps.changed-files.outputs) }}'
+          echo "Changed files: $CHANGED_FILES"
 
 #      - name: GIT Commit
 #        if: steps.changed-files.outputs.any_changed == 'true'
