@@ -32,9 +32,6 @@ jobs:
       - name: Get changed files
         id: changed-files
         uses: tj-actions/changed-files@v42
-        with:
-          files: |
-            *.nuspec
 
       - name: List all changed files
         env:
