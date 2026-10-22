@@ -19,7 +19,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>twingate</id>
-    <version>2025.175.4098</version>
+    <version>2026.302.9964</version>
     <packageSourceUrl>https://github.com/Twingate-Labs/chocolatey-packages</packageSourceUrl>
     <owners>Twingate Labs</owners>
     <title>Twingate (Client)</title>
@@ -44,8 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 Please see https://www.twingate.com/changelog/clients/
 ]]></releaseNotes>
   <dependencies>
-    <dependency id="chocolatey-os-dependency.extension" version="0.0.1" />
-    <dependency id="dotnet-6.0-desktopruntime" version="6.0.22" />
+    <dependency id="dotnet-10.0-desktopruntime" version="10.0.0" />
   </dependencies>
   </metadata>
   <files>
