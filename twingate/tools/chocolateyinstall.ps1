@@ -1,7 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-Confirm-Win10 19043
-
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
